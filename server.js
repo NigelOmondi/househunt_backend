@@ -11,10 +11,7 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors({
-  origin: ['https://househunt.onrender.com',
-  'http://localhost:3000']
-}));
+app.use(cors());
 
 app.use((req, res, next) => {
     console.log(req.path, req.method)
