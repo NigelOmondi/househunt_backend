@@ -12,7 +12,7 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(cors({
-  origin: ['https://househunt-app.render.com',
+  origin: ['https://househunt.onrender.com',
   'http://localhost:3000']
 }));
 
