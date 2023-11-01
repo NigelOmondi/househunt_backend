@@ -10,8 +10,15 @@ const inquiryRoutes = require('./routes/inquiriesRoutes');
 const app = express();
 
 // Middleware
-app.use(cors({origin: ["http://localhost:3000", "https://househunt.onrender.com/"]}));
 app.use(express.json());
+
+app.use(cors({
+  origin: ['http://localhost:3000', 'https://househunt.onrender.com'],
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true
+}));
+
+
 
 
 app.use((req, res, next) => {
