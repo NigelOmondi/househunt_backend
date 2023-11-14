@@ -10,14 +10,15 @@ const {
 
 const router = express.Router();
 
+
 // GET all houses
-router.get('/', getHouses)
+router.get('/all', getHouses)
 
 // GET a particular house
 router.get('/:id', getHouse)
 
 // POST a new house
-router.post('/', createHouse)
+router.post('/all', createHouse)
 
 // DELETE a house
 router.delete('/:id', deleteHouse)

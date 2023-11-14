@@ -27,7 +27,7 @@ app.use((req, res, next) => {
 })
 
 // Routes for handling houses
-app.use('/api/houses', houseRoutes)
+app.use('/api/houses/', houseRoutes)
 
 // Routes for handling inquiries
 app.use('/api/inquiries', inquiryRoutes)
